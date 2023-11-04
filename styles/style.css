@@ -57,6 +57,12 @@ h4 {
   font-size: 2rem;
   color: #eeeeee;
   letter-spacing: 0.4rem; }
+  @media only screen and (max-width: 75em) {
+    h4 {
+      font-size: 1.8rem; } }
+  @media only screen and (max-width: 37.5em) {
+    h4 {
+      font-size: 1.4rem; } }
 
 .bar {
   height: 6vh;
@@ -67,6 +73,12 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 75em) {
+    .workshop img {
+      width: 80%; } }
+  @media only screen and (max-width: 56.25em) {
+    .workshop img {
+      width: 95%; } }
 
 video {
   position: absolute;
@@ -209,6 +221,43 @@ button {
 
 .navigation .active {
   color: #FFD369; }
+
+.navigation__mobile {
+  display: none;
+  margin-bottom: 2rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 100;
+  height: 5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__mobile {
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__mobile {
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
+  .navigation__mobile__list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    max-width: 35rem;
+    background-color: #222831;
+    border: 2px solid #FFD369;
+    border-radius: 10rem;
+    padding: 1rem; }
+  .navigation__mobile__link {
+    color: #eeeeee;
+    font-size: 3rem;
+    text-decoration: none; }
+    .navigation__mobile__link__active {
+      font-size: 3rem;
+      color: #FFD369; }
 
 .swiper {
   width: 100%;
@@ -376,9 +425,16 @@ button {
     font-family: "Paytone One", sans-serif;
     color: #393E46;
     text-transform: uppercase; }
+    @media only screen and (max-width: 75em) {
+      .colabs__title {
+        font-size: 4rem; } }
     @media only screen and (max-width: 56.25em) {
       .colabs__title {
         font-size: 3.5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .colabs__title {
+        text-align: center;
+        font-size: 3.2rem; } }
   .colabs__describe {
     margin-top: 2rem;
     text-align: center;
@@ -399,9 +455,18 @@ button {
   background-color: #FFD369;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 15rem;
   align-items: center;
-  height: 40vh; }
+  padding-block: 2rem; }
+  @media only screen and (max-width: 75em) {
+    .details {
+      gap: 0rem;
+      justify-content: space-around; } }
+  @media only screen and (max-width: 37.5em) {
+    .details {
+      gap: 2rem;
+      flex-direction: column; } }
   .details__item {
     color: #393E46;
     display: flex;
@@ -410,14 +475,28 @@ button {
     justify-content: center;
     max-width: 25rem;
     text-align: center; }
+    @media only screen and (max-width: 56.25em) {
+      .details__item {
+        max-width: 17rem; } }
   .details__title {
     font-size: 2.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .details__title {
+        font-size: 2rem; } }
   .details__describe {
     margin-top: 1rem;
     font-size: 1.4rem; }
+    @media only screen and (max-width: 56.25em) {
+      .details__describe {
+        font-size: 1.2rem; } }
   .details__item img {
     width: 10rem;
     height: 10rem; }
+    @media only screen and (max-width: 56.25em) {
+      .details__item img {
+        margin-bottom: 1rem;
+        width: 7rem;
+        height: 7rem; } }
 
 .services {
   display: flex;
@@ -430,6 +509,9 @@ button {
     font-weight: 700;
     text-transform: uppercase;
     color: #FFD369; }
+    @media only screen and (max-width: 75em) {
+      .services__title {
+        font-size: 4rem; } }
     @media only screen and (max-width: 56.25em) {
       .services__title {
         font-size: 3.2rem; } }
@@ -443,9 +525,14 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     gap: 5rem;
-    padding-bottom: 5rem; }
+    padding-bottom: 5rem;
+    max-width: 130rem; }
+    @media only screen and (max-width: 75em) {
+      .services__all {
+        gap: 0rem;
+        justify-content: space-around; } }
   .services__item {
     max-width: 30%;
     display: flex;
@@ -456,6 +543,10 @@ button {
     padding: 4rem;
     width: 100%;
     transform: all 0.5s; }
+    @media only screen and (max-width: 75em) {
+      .services__item {
+        min-width: 35%;
+        margin: 1rem !important; } }
     @media only screen and (max-width: 56.25em) {
       .services__item {
         min-width: 25rem;
@@ -488,14 +579,14 @@ button {
     width: 18rem;
     height: 18rem;
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 75em) {
+      .services__item img {
+        width: 15rem;
+        height: 15rem; } }
     @media only screen and (min-width: 100em) {
       .services__item img {
-        width: 35rem;
-        height: 30rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .services__item img {
         width: 22rem;
-        height: 17rem; } }
+        height: 22rem; } }
 
 .hero {
   background: transparent;
@@ -510,15 +601,20 @@ button {
   min-height: 70vh; }
   @media only screen and (max-width: 75em) {
     .hero {
-      padding-top: 18rem;
       justify-content: center;
-      flex-direction: column;
-      padding-bottom: 18rem; } }
+      flex-direction: column; } }
   .hero em {
     margin-top: 5rem;
     font-family: "Roboto", sans-serif;
     font-size: 1.8rem;
+    max-width: 70%;
     text-align: center; }
+    @media only screen and (max-width: 75em) {
+      .hero em {
+        font-size: 1.6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .hero em {
+        min-width: 95%; } }
   @media only screen and (min-width: 100em) {
     .hero {
       justify-content: center; } }
@@ -534,7 +630,7 @@ button {
     width: 70%; }
     @media only screen and (max-width: 75em) {
       .hero__text {
-        padding-top: 2rem;
+        margin-top: 5rem;
         padding-bottom: 2rem; } }
     @media only screen and (max-width: 56.25em) {
       .hero__text {
@@ -551,24 +647,18 @@ button {
       margin-top: 5rem;
       -webkit-text-stroke: 0.05vw #FFD369;
       color: rgba(255, 255, 255, 0.014); }
-      @media only screen and (max-width: 75em) {
-        .hero__text p:nth-child(2) {
-          transform: translateX(5rem); } }
-      @media only screen and (max-width: 37.5em) {
-        .hero__text p:nth-child(2) {
-          transform: translateX(2rem); } }
     @media only screen and (min-width: 100em) {
       .hero__text p {
         font-size: 7rem; } }
     @media only screen and (max-width: 75em) {
       .hero__text p {
-        font-size: 5rem; } }
+        font-size: 4rem; } }
     @media only screen and (max-width: 56.25em) {
       .hero__text p {
-        font-size: 4.6rem; } }
+        font-size: 3.5rem; } }
     @media only screen and (max-width: 37.5em) {
       .hero__text p {
-        font-size: 3.5rem; } }
+        font-size: 2.5rem; } }
   .hero__motto {
     margin-top: 10rem;
     display: flex;
@@ -588,25 +678,25 @@ button {
 .waviy {
   position: relative;
   -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
-  font-size: 2.5rem;
   margin-left: 5rem;
   transform: translateY(-3rem); }
-  @media only screen and (max-width: 56.25em) {
-    .waviy {
-      font-size: 1rem; } }
-  @media only screen and (max-width: 75em) {
-    .waviy {
-      font-size: 2.5rem; } }
-  @media only screen and (min-width: 100em) {
-    .waviy {
-      font-size: 3.5rem; } }
   .waviy span {
     font-family: "Paytone One", sans-serif;
     position: relative;
     display: inline-block;
     color: #FFD369;
     animation: waviy 2s infinite;
-    animation-delay: calc(0.1s * var(--i)); }
+    animation-delay: calc(0.1s * var(--i));
+    font-size: 2.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .waviy span {
+        font-size: 1.8rem; } }
+    @media only screen and (max-width: 75em) {
+      .waviy span {
+        font-size: 2.7rem; } }
+    @media only screen and (min-width: 100em) {
+      .waviy span {
+        font-size: 3.5rem; } }
 
 .header {
   display: flex;
@@ -621,7 +711,7 @@ button {
   padding-top: 2rem; }
   @media only screen and (max-width: 37.5em) {
     .header {
-      justify-content: center; } }
+      justify-content: space-around; } }
 
 .sticky {
   background: #222831; }
@@ -636,12 +726,31 @@ button {
     margin-top: 6rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10rem;
     flex-direction: row;
     width: 90%; }
+    @media only screen and (max-width: 75em) {
+      .team__container {
+        gap: 0rem;
+        justify-content: space-around; } }
+    @media only screen and (max-width: 56.25em) {
+      .team__container {
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%; } }
   .team__member img {
     width: 40rem;
     height: 40rem; }
+    @media only screen and (max-width: 75em) {
+      .team__member img {
+        width: 35rem;
+        height: 35rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .team__member img {
+        margin-top: 5rem; } }
   .team__title {
     font-size: 5rem;
     font-family: "Paytone One", sans-serif;
@@ -675,19 +784,52 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    gap: 5rem;
+    width: 100%; }
+    @media only screen and (max-width: 75em) {
+      .blog__container {
+        gap: 0rem;
+        justify-content: space-around; } }
+    @media only screen and (max-width: 56.25em) {
+      .blog__container {
+        flex-direction: column;
+        gap: 6rem; } }
   .blog__post {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    max-width: 30%; }
+    width: 30%;
+    max-width: 32rem; }
+    @media only screen and (max-width: 75em) {
+      .blog__post {
+        align-items: center;
+        text-align: center; } }
+    @media only screen and (max-width: 56.25em) {
+      .blog__post {
+        width: 95%;
+        align-items: flex-start;
+        justify-content: space-around;
+        max-width: 55rem; } }
     .blog__post p {
       color: white;
       font-size: 1.4rem; }
+      @media only screen and (max-width: 56.25em) {
+        .blog__post p {
+          width: 100%;
+          text-align: start; } }
   .blog__post img {
     width: 30rem;
     height: 30rem; }
+    @media only screen and (max-width: 75em) {
+      .blog__post img {
+        width: 20rem;
+        height: 20rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .blog__post img {
+        width: 100%;
+        height: 30rem; } }
   .blog h2 {
     font-family: "Paytone One", sans-serif;
     font-size: 3rem;

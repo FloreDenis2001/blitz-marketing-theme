@@ -15,10 +15,17 @@
         font-family: $font-family-secondary;
         color: $color-secondary;
         text-transform: uppercase;
+        @include respond(tab-land) {
 
+            font-size: 4rem;
+        }
         @include respond(tab-port) {
 
             font-size: 3.5rem;
+        }
+        @include respond(tab-port) {
+text-align: center;
+            font-size: 3.2rem;
         }
     }
 
