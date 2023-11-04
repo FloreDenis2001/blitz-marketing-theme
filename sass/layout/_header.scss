@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    background-color: rgba($color-bg,0.6);
+    padding: 1rem;
+    padding-top: 2rem;
+    
+   @include respond(phone){
+    justify-content: center;
+   }
+}
+
+.sticky{
+    background: $color-bg; 
+
+}
+
+

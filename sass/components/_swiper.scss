@@ -1,0 +1,34 @@
+.swiper {
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: $color-bg;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+
+    &:hover{
+      transform: scale(1.1);
+    }
+
+    @include respond(phone) {
+      width: 14rem;
+      height: 10rem;
+      z-index: 100;
+  }
+  }
+  .swiper-pagination-bullet-active{
+    background-color: $color-white;
+  }
