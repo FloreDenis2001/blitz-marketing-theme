@@ -5,6 +5,11 @@ let nodes = document.querySelectorAll('.about__item');
 let btns=document.querySelectorAll('.nav');
 
 
+window.onload = () => {
+    document.getElementById("videoclip").play();
+}
+
+
 for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener('click', function() {
         let activeButton = document.querySelector(".active");
